@@ -4,7 +4,7 @@ html {
 
 *,
 *::before,
-*::after{
+*::after {
   box-sizing: inherit;
 }
 
@@ -20,8 +20,8 @@ p {
 
 ul,
 ol {
-margin: 0;
-padding-left: 0;
+  margin: 0;
+  padding-left: 0;
 }
 
 img {
@@ -38,7 +38,7 @@ img {
   --white-color: #ffffff;
   --accent-color: #4d5ae5;
   --active-color: #404bbf;
-  --icon-color: #8E8F99;
+  --icon-color: #8e8f99;
   --bg-gradient: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
   --footer-bg: rgba(255, 255, 255, 0.1);
   --footer-hover: #31d0aa;
@@ -385,9 +385,9 @@ body {
 }
 
 .portfolio-item {
-  border: 0.5px solid #f4f4fd;
+  border: 0.5px solid var(--background-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-  width: calc((100% - 48px) / 3 );
+  width: calc((100% - 48px) / 3);
 }
 
 .portfolio-image-list {
@@ -398,7 +398,8 @@ body {
 }
 
 .portfolio-item:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-text {
@@ -409,7 +410,7 @@ body {
 }
 
 .portfolio-button {
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--footer-text-color);
   background-color: var(--background-color);
   color: var(--accent-color);
   font-weight: 700;
