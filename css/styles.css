@@ -42,6 +42,9 @@ img {
   --bg-gradient: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
   --footer-bg: rgba(255, 255, 255, 0.1);
   --footer-hover: #31d0aa;
+  --overlay: rgba(46, 47, 66, 0.4);
+  --modal-bg: #fcfcfc;
+  --transit: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -147,6 +150,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--title-color);
+  transition: color var(--transit);
 }
 
 .nav-link:hover,
@@ -167,6 +171,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  transition: color var(--transit);
 }
 
 .header-address-link:hover,
@@ -204,6 +209,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.04em;
   padding: 16px 32px;
+  transition: background-color var(--transit), box-shadow var(--transit);
 }
 
 .hero-button:hover,
@@ -316,6 +322,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color var(--transit);
 }
 
 .team-social-link:hover,
@@ -348,10 +355,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: border-color var(--transit), fill var(--transit);
 }
 
 .customers-icon {
   fill: var(--icon-color);
+  transition: fill var(--transit);
 }
 
 .customers-link:hover,
@@ -388,6 +397,7 @@ body {
   border: 0.5px solid var(--background-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   width: calc((100% - 48px) / 3);
+  transition: box-shadow var(--transit);
 }
 
 .portfolio-image-list {
@@ -418,6 +428,7 @@ body {
   font-size: 16px;
   letter-spacing: 0.04em;
   padding: 12px 24px;
+  transition: box-shadow var(--transit), background-color var(--transit), color var(--transit), border-color var(--transit);
 }
 
 .portfolio-button:hover,
@@ -484,6 +495,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color var(--transit);
 }
 
 .footer-social-link:hover,
